@@ -1,0 +1,13 @@
+@import "../../../../../../scss/base/variables";
+:host{
+  strong{
+    font-size: 25px;
+    font-weight: 700;
+    color: $preto;
+  }
+  h1{
+    display: flex;
+		justify-content: center;
+		align-items: center;
+  }
+}

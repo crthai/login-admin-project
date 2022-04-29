@@ -1,0 +1,17 @@
+:host{
+  input {
+    width: 95%;
+    background-color: none;
+    border: none;
+
+    font-size: 29px;
+
+    color: black;
+    outline: none;
+   	font-weight: 100;
+
+    &::placeholder {
+      color: black;
+    }
+}
+}

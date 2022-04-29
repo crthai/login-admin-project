@@ -1,0 +1,16 @@
+<div class="container" >
+<form [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+
+  <label>
+  <input type="text" formControlName="firstName" placeholder="Primeiro Nome" >
+  </label>
+  <label>
+  <input type="text" formControlName="confirmName" placeholder="Confirme o nome">
+  </label>
+
+  <button class="btn-cinza" [disabled]="cadastroForm.invalid" routerLink="confirm" [routerLinkActive]="['active']">Enviar</button>
+
+  <router-outlet></router-outlet>
+
+</form>
+</div>

@@ -1,0 +1,34 @@
+
+@import "../../../../../../../projeto-final/scss/base/variables";
+
+:host{
+  form{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &,
+    label,
+    input{
+      width:100%;
+
+    }
+
+    label{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $preto;
+
+      input{
+        height: 30px;
+        border: none;
+        font-size: 18px;
+        &::placeholder{
+          color: $preto;
+        }
+      }
+    }
+  }
+}

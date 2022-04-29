@@ -1,0 +1,17 @@
+<div class="container" >
+  <h1> Você tem acesso aos produtos suuuper secretos! Dê uma olhada...</h1>
+  <br>
+  <app-home-add> </app-home-add>
+  <br>
+  <li *ngFor="let item of productList">
+   {{item.id}} - <input type="text" [(ngModel)]="item.title" (keyup.enter)="productListEdit(item.title, item.id)"> <button (click)="productListDelete(item.id)">Deletar</button>
+  </li>
+  <button type="button" class="btn-cinza" (click)="logout()">Sair</button>
+</div>
+<br>
+<br>
+<div class="container" *ngIf="error$ | async" >
+  Erro ao carregar cursos. Tente novamente mais tarde.
+</div>
+
+<router-outlet></router-outlet>
